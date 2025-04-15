@@ -1,0 +1,14 @@
+General Observations
+
+The conversion from C code to assembly code demonstrates the how much of a filtered compiler we operate through when we code in C or C++.
+Assembly is direct and blatant with each line of code, which makes it appear more simplistic at first.
+What complicates assembly is the amount of user knowledge required since many references in the code, like "movq	%rdi, -24(%rbp)", 
+are unintuitive as to what exactly this data is accomplishing. 
+(we disussed what rbp and the number preceeding it stands for in-class, but before that it was gibberish to me)
+In assembly, each operation requires its own line of code. Which turns the simple "for loop" in addMatsSubr.s into many primitive statements.
+It is a stark contrast to C++ where you can make a fine program/application without using/understanding much about the built-in features and libraries.
+In assembly you cannot create your own objects, which forces the extreme usage of primitve statements and built-in functionalities.
+This leads to the fact that, as discussed in class, assembly has far less safeguards than C/C++ and is intended for senior/experienced programmers.
+"basic.s" was the easiest to understand because of the definitive variables, but it was still easy to get lost in the assembly code for the "for loop".
+In total, assembly is much more complicated and convoluted than higher level languages like C++.
+I can see the relationship between the ".c" and ".s" files, but it is hard to see the 1-to-1 of the two coding languages.
